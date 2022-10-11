@@ -15,7 +15,10 @@ public final class App {
 
         System.out.println("Welecom To The Game");
         Game blackJack = new Game();
-        System.out.println(Number.KING + " Has value of " + Number.KING.numberValue);
+        // System.out.println(Number.QUEEN + " Has value of " + Number.QUEEN.numberValue);
+
+        // Card test = new Card(type.carreau, Number.JACK);
+        // System.out.println(test);
 
     }
 }
