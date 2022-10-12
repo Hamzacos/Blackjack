@@ -30,19 +30,19 @@ public class listCard {
     //         listCard.add(new Card(type, num));
     //         int p = listCard.indexOf(make);
     //        listCard.stream().filter(c -> listCard.indexOf(c) > p).collect(Collectors.toList());
-    // }<
+    // }
     // }
 // }
-                public  ArrayList extraire_ieme_carte(ArrayList list,int n){
-                    ArrayList simp = new ArrayList<>();
+            public  ArrayList<Card> extraire_ieme_carte(ArrayList<Card> list,int n){
+                    ArrayList<Card> simp = new ArrayList<>();
                     simp.add(list.get(n));
                     list.remove(n);
-                    simp.add(list);
+                    simp.addAll(list);
                     list = simp;
                     return list;
-                }
+            }
 
-            public ArrayList tirer_une_carte(ArrayList list){
+            public ArrayList<Card> tirer_une_carte(ArrayList<Card> list){
 
                 Random random =new Random();
                 int randomIndex=0;
@@ -53,8 +53,8 @@ public class listCard {
 
             public void melanger_jeu_cartes(){
 
-                ArrayList n;
-                ArrayList temp= new ArrayList<>();
+                ArrayList<Card> n;
+                ArrayList<Card> temp= new ArrayList<>();
                 for(int i=0;i<52;i++){
                     n=tirer_une_carte(this.listCard);
                     temp.add(n.get(0));
@@ -62,12 +62,20 @@ public class listCard {
                 this.listCard=temp;
             }
 
-    public String toString(){
-        String sort = "";
-        for(Card  card : listCard){
-            sort += card;
-            sort += "\n";
-        }
-        return sort;
-    }
+
+            public Card takeCard(){
+                
+                Card taken = new Card(listCard.get(0));
+                listCard.remove(0);
+                return taken;
+            }
+
+            public String toString(){
+                String sort = "";
+                for(Card  card : listCard){
+                    sort += card;
+                    sort += "\n";
+                }
+                return sort;
+            }
 }

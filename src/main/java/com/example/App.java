@@ -26,7 +26,18 @@ public final class App {
 
         // testofList.MakelistCard(new Card(type.cœur, Number.FIVE));;
         // System.out.println(testofList);
-        testofList.melanger_jeu_cartes();
-        System.out.println(testofList);
+
+
+        // testofList.melanger_jeu_cartes();
+        // System.out.println(testofList);
+
+    //    listCard deck = new listCard(true);
+    //    Hand main = new Hand();
+    //    main.takeCard(deck);
+    //    System.out.println("l'element :");
+    //    System.out.println(main);
+    //    System.out.println("apres :");
+    //    System.out.println(deck);
+
     }
 }

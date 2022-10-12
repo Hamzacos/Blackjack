@@ -10,6 +10,11 @@ public class Card {
         this.number = number;
     }
 
+    public Card(Card card){
+        this.number = card.getNumber();
+        this.type = card.getType();
+    }
+
     public int getValue(){
         return number.numberValue;
     }
