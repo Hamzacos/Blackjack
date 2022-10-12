@@ -28,4 +28,8 @@ public enum Number {
         return number;
     }
 
+    public Card getType() {
+        return null;
+    }
+
 }

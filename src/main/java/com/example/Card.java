@@ -14,7 +14,7 @@ public class Card {
         return number.numberValue;
     }
 
-    public type gType(){
+    public type getType(){
         return type;
     }
 
