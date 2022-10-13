@@ -27,7 +27,6 @@ public abstract class Person {
     }
 
     public boolean hasBlackJack(){
-
         if(this.getHand().valueSum() == 21){
             return true;
         }else{
@@ -35,5 +34,10 @@ public abstract class Person {
         }
     }
 
-    
+    public void printHand(){
+        System.out.println(this.name + " Votre main est :");
+        System.out.println(this.hand + " Estimé à : " + this.hand.valueSum());
+    }
+
+
 }
