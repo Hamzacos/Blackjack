@@ -23,6 +23,10 @@ public class listCard {
         }
     }
 
+    public void addCard(Card card){
+        listCard.add(card);
+    }
+
     // public void MakelistCard(Card make){
     //   listCard = new ArrayList<Card>();
     //   for(type type : type.values()){
@@ -64,7 +68,7 @@ public class listCard {
 
 
             public Card takeCard(){
-                
+
                 Card taken = new Card(listCard.get(0));
                 listCard.remove(0);
                 return taken;

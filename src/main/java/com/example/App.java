@@ -24,12 +24,11 @@ public final class App {
       
 
 
-        // testofList.MakelistCard(new Card(type.cœur, Number.FIVE));;
-        // System.out.println(testofList);
-
+        
 
         // testofList.melanger_jeu_cartes();
         // System.out.println(testofList);
+
 
     //    listCard deck = new listCard(true);
     //    Hand main = new Hand();
@@ -38,6 +37,16 @@ public final class App {
     //    System.out.println(main);
     //    System.out.println("apres :");
     //    System.out.println(deck);
+
+
+    // listCard testDeck = new listCard();
+    // testDeck.addCard(new Card(type.cœur, Number.ACE));
+    // testDeck.addCard(new Card(type.cœur, Number.KING));
+    // Hand testHand = new Hand();
+    // testHand.takeCard(testDeck);
+    // testHand.takeCard(testDeck);
+    // System.out.println("The value of this hand is: " + testHand.valueSum());
+
 
     }
 }
