@@ -34,9 +34,19 @@ public abstract class Person {
         }
     }
 
+    public void hit(listCard deck, listCard DD){
+        if(!deck.hasCard()){
+            deck.chargerListCard(DD);
+        }
+        this.hand.takeCard(deck);
+        System.out.println(this.name + " prend une carte");
+        this.printHand();
+    }
+
+
     public void printHand(){
-        System.out.println(this.name + " Votre main est :");
-        System.out.println(this.hand + " Estimé à : " + this.hand.valueSum());
+        System.out.print(this.name + " Votre main est :");
+        System.out.println(this.hand + " le totale de votre main est: " + this.hand.valueSum());
     }
 
 

@@ -74,6 +74,37 @@ public class listCard {
                 return taken;
             }
 
+            public boolean hasCard(){
+                if(listCard.size()>0){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+
+            public ArrayList<Card> getCards() {
+                return listCard;
+            }
+
+            public void emptyList(){
+                listCard.clear();
+            }
+
+            public void addCards(ArrayList<Card> cards){
+                listCard.addAll(cards);
+            }
+
+            public void chargerListCard(listCard discard){
+                this.addCards(discard.getCards());
+                this.melanger_jeu_cartes();
+                discard.emptyList();
+                System.out.println("Manqué de cartes, la création d’une nouveauliset de carte de défausse pil.");
+            }
+
+            public int cardsLeft(){
+                return listCard.size();
+            }
+
             public String toString(){
                 String sort = "";
                 for(Card  card : listCard){

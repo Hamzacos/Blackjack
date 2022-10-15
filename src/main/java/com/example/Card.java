@@ -28,6 +28,7 @@ public class Card {
     }
 
     public String toString(){
+        // return ("["+number+" of "+ type + "] ("+ this.getValue() +")";
         return ("["+number+" of "+ type + "] ("+this.getValue()+")");
 
     }

@@ -35,7 +35,9 @@ public class Hand {
 
     }
 
-    
+    public Card getCrad(int i){
+        return hand.get(i);
+    }
 
     public String toString(){
 
@@ -44,5 +46,10 @@ public class Hand {
             output += card + " - "; 
         }
         return output;
+    }
+
+    public void discardHandToDeck(listCard discardDeck){
+        discardDeck.addCards(hand);
+        hand.clear();
     }
 }
