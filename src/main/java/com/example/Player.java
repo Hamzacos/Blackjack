@@ -28,7 +28,7 @@ public class Player extends Person {
             }
         }
 
-        if(decision ==1){
+        if(decision == 1){
             this.hit(list,DD);
             if(this.getHand().valueSum() > 20){
                 return;

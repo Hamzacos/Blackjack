@@ -28,11 +28,7 @@ public class Game {
             dealer.getHand().discardHandToDeck(DD);
             player.getHand().discardHandToDeck(DD);
         }
-
-        //Check to make sure the deck has at least 4 cards left to start
-        //Technically this could mean there's 1-3 cards left in the deck that are usable, but we'll just reshuffle them and not worry about it
         if(groupCard.cardsLeft() < 4){
-            //reload the deck from discard pile if we're out of cards
             groupCard.chargerListCard(DD);
         }
 
@@ -77,7 +73,7 @@ public class Game {
             dealer.hit(groupCard, DD);
         }
 
-        if(dealer.getHand().valueSum()>21){
+        if(dealer.getHand().valueSum() > 21){
             System.out.println("croupier dépasse");
             wins++;
         }
@@ -93,7 +89,6 @@ public class Game {
             System.out.println("Egalite.");
         }
 
-        //Start a new round
         startRound();
     }
 }
